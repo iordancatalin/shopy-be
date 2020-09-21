@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        default_schema: shopy
+  datasource:
+    plarform: postgres
+    url: jdbc:postgresql://localhost:5432/shopy
+    username: shopy
+    password: shopy-pass
