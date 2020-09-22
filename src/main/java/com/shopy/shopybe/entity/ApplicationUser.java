@@ -1,9 +1,6 @@
 package com.shopy.shopybe.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -14,9 +11,11 @@ import java.util.Set;
 @Setter
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class ApplicationUser {
 
     @Id
+    @GeneratedValue
     private Long id;
 
     @Column(nullable = false)
@@ -27,6 +26,9 @@ public class ApplicationUser {
 
     @Column(nullable = false)
     private String password;
+
+    @Column(nullable = false)
+    private boolean enabled;
 
     @ManyToOne
     @JoinColumn(name = "roleId", nullable = false)
