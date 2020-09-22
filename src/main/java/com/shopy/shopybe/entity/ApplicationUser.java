@@ -1,5 +1,6 @@
 package com.shopy.shopybe.entity;
 
+import com.shopy.shopybe.security.ApplicationRole;
 import lombok.*;
 
 import javax.persistence.*;
@@ -30,8 +31,7 @@ public class ApplicationUser {
     @Column(nullable = false)
     private boolean enabled;
 
-    @ManyToOne
-    @JoinColumn(name = "roleId", nullable = false)
+    @Enumerated(EnumType.STRING)
     private ApplicationRole role;
 
     @ManyToMany
