@@ -16,3 +16,7 @@ spring:
     url: jdbc:postgresql://localhost:5432/shopy
     username: shopy
     password: shopy-pass
+
+jwt:
+  secret: n1~I-FH41;w|0%&C4;kzY*Z[5yZLdMn1~I-FH41;w|0%&C4;kzY*Z[5yZLdMn1~I-FH41;w|0%&C4;kzY*Z[5yZLdM
+  issuer: Shopy-BE
