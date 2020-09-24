@@ -1,7 +1,7 @@
 package com.shopy.shopybe.service;
 
 import com.shopy.shopybe.security.ApplicationRole;
-import com.shopy.shopybe.exceptions.EmailAlreadyExistsException;
+import com.shopy.shopybe.exception.model.EmailAlreadyExistsException;
 import com.shopy.shopybe.model.SignUpRequest;
 import com.shopy.shopybe.repository.ApplicationUserRepository;
 import com.shopy.shopybe.transformer.SignUpTransformer;
